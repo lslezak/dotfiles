@@ -50,6 +50,8 @@
         // ------------------
         // spellchecker
         "streetsidesoftware.code-spell-checker",
+        // load indentation style from .editorconfig files
+        "EditorConfig.EditorConfig",
         // prettier autoformatter
         "esbenp.prettier-vscode",
         // shell programming

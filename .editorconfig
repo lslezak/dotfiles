@@ -1,0 +1,12 @@
+# see https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*.sh]
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = true
+# custom shfmt options
+switch_case_indent = true
+space_redirects    = true
