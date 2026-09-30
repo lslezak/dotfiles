@@ -1,0 +1,5 @@
+ignored:
+  # do not pin package versions, the development images should always use the
+  # latest packages
+  - DL3037 # zypper
+  - DL3013 # pip
