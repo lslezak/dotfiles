@@ -19,7 +19,7 @@ jobs:
     steps:
       # git and tar are needed by the checkout action
       - name: Install dependencies
-        run: zypper --non-interactive install --no-recommends --allow-downgrade git tar gzip make ShellCheck shfmt hadolint
+        run: zypper --non-interactive install --no-recommends --allow-downgrade git tar gzip make findutils ShellCheck shfmt hadolint
 
       - name: Git checkout
         uses: actions/checkout@v7
@@ -31,7 +31,7 @@ jobs:
         run: make format
 
       - name: Validate Dockerfile
-        run: make lint-dockerfiles
+        run: make lint-dockerfile
 
   devcontainer-json:
     runs-on: ubuntu-latest
@@ -69,5 +69,5 @@ jobs:
         uses: actions/checkout@v7
 
       - name: Build the image
-        run: docker build
-        working-directory: ./devcontainer
+        run: docker build .
+        working-directory: ./.devcontainer

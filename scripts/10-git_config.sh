@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Initialize Git configuration
-# 
+#
 # NOTE: the ~/.gitconfig file itself is copied automatically by VSCode from your
 # real $HOME, we do not need to include it in the dotfiles repository
 
